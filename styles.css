@@ -94,3 +94,40 @@ body {
         z-index: -1;
     }
 }
+@media only screen and (max-width: 46.1875em) {
+    .planet {
+        width: 10em;
+        height: 10em;
+    }
+    .satellite {
+        width: 3em;
+        height: 3em;
+    }
+    @keyframes round {
+        0%,
+        100% {
+            top: 2em;
+            left: -15em;
+            box-shadow: -2em 0 5em 0.5em #c6836466;
+            z-index: 2;
+        }
+        25% {
+            box-shadow: 0 0 3em 1em #412104b5;
+        }
+        75% {
+            box-shadow: 0 0 3em 1em black;
+        }
+        48% {
+            z-index: 2;
+        }
+        50% {
+            left: 20em;
+            top: 4em;
+            z-index: -1;
+            box-shadow: 2em 0 5em 0.5em #845a4682;
+        }
+        99% {
+        z-index: -1;
+        }
+    }
+}
