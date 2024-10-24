@@ -131,3 +131,40 @@ body {
         }
     }
 }
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .planet {
+        width: 15em;
+        height: 15em;
+    }
+    .satellite {
+        width: 4em;
+        height: 4em;
+    }
+    @keyframes round {
+        0%,
+        100% {
+            top: 2em;
+            left: -15em;
+            box-shadow: -2em 0 5em 0.5em #c6836466;
+            z-index: 2;
+        }
+        25% {
+            box-shadow: 0 0 3em 1em #412104b5;
+        }
+        75% {
+            box-shadow: 0 0 3em 1em black;
+        }
+        48% {
+            z-index: 2;
+        }
+        50% {
+            left: 20em;
+            top: 4em;
+            z-index: -1;
+            box-shadow: 2em 0 5em 0.5em #845a4682;
+        }
+        99% {
+        z-index: -1;
+        }
+    }
+}
